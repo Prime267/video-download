@@ -1,0 +1,43 @@
+.login-form-header {
+    color: white;
+    height: 650px;
+    background-color: #56b5dd;
+    opacity: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.login {
+    padding: 0;
+}
+
+.login-wrapper {
+    padding: 0;
+}
+
+.name-field {
+    margin-bottom: 32px;
+}
+
+.input-wrapper {
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    width: 770px;
+    padding-left: 20px;
+    border-color: transparent;
+    font-size: 16px;
+}
+
+.submit-btn{
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    width: 770px;
+    margin-top: 50px;
+    color: #099fe0;
+    background-color: #f7fdff;
+    font-size: 18px;
+    font-weight:bold;
+}

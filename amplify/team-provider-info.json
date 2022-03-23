@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-videodownload-dev-123017-authRole",
+      "UnauthRoleArn": "arn:aws:iam::396312416251:role/amplify-videodownload-dev-123017-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::396312416251:role/amplify-videodownload-dev-123017-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-videodownload-dev-123017-deployment",
+      "UnauthRoleName": "amplify-videodownload-dev-123017-unauthRole",
+      "StackName": "amplify-videodownload-dev-123017",
+      "StackId": "arn:aws:cloudformation:eu-central-1:396312416251:stack/amplify-videodownload-dev-123017/decb6f70-4bb9-11ec-bf8e-067a5fac0e9a",
+      "AmplifyAppId": "d25o5sj178x2id"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d25o5sj178x2id",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

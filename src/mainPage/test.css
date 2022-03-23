@@ -1,0 +1,13 @@
+.header-background {
+    background-image: url("https://images.folloze.com/image/upload/c_fill,g_east,h_320,w_1440/c_fill,f_auto,q_auto:sensitive/v1639729090/msrnwpzccimttxh1osj7.png");
+    max-width: 100%;
+}
+
+.text-header {
+    display: inline-block;
+}
+
+.coffee {
+    background-color: gold;
+    color: brown;
+}

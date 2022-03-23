@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        /* .header-container {
+            color: rgb(51, 51, 51);
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            transition: top 2s ease-out;
+            visibility: visible;
+            height: 8rem;
+        }
+
+        .header-container .header-content {
+            height: 8rem;
+            line-height: 8rem;
+            position: absolute;
+            width: calc(1280px - 6rem);
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .share-button {
+            border-color: rgb(247, 121, 96);
+            background-color: rgb(247, 121, 96);
+        }
+
+        .logo-container.padding {
+            height: 4rem;
+            line-height: 4rem;
+            margin-right: 1.5rem;
+        }
+
+        .logo-container .smart-image {
+            height: 5.6rem;
+            width: auto;
+            max-width: 45rem;
+            cursor: pointer;
+            vertical-align: middle;
+            position: relative;
+            top: -0.1rem;
+        }
+
+        .header-content .right-content {
+            float: right;
+        }
+
+        .header-content .right-content {
+            float: right;
+        }
+
+        .header-content>* {
+            display: inline-block;
+        }
+
+        .right-content .share-button-container {
+            position: relative;
+        }
+
+        .share-button {
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            height: 3.6rem;
+            width: 3.6rem;
+            color: #fff;
+            font-size: 1.8rem;
+            border-color: rgb(247, 121, 96);
+            background-color: rgb(247, 121, 96);
+        }
+
+        .share-button .icon-share {
+            display: flex;
+            align-self: center;
+        }
+
+        .share-button>* {
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        [class^=icon-]:before {
+            font-family: icomoon !important;
+            speak: never;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-share:before {
+            content: "\E950";
+        } */
+        .logo-container {
+            display: inline-block;
+        }
+
+        .logo-container img {
+            height: 40px;
+        }
+
+        .header-content {
+            padding: 0 40px;
+        }
+
+        .header-content h2 {
+            line-height: 80px;
+            vertical-align: middle;
+            font-size: 0.9rem;
+            font-weight: 400;
+            white-space: pre;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .share-button {
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            color: #fff;
+            font-size: 1.8rem;
+            border-color: rgb(247, 121, 96);
+            background-color: rgb(247, 121, 96);
+            margin-top: 20px;
+        }
+
+        .right-content {
+            float: right;
+        }
+
+        .header-container {
+            background-image: url('https://images.folloze.com/image/upload/c_fill,g_east,h_320,w_1440/c_fill,f_auto,q_auto:sensitive/v1639729090/msrnwpzccimttxh1osj7.png');
+            background-size: cover;
+            height: 320px;
+        }
+
+        .container-text {
+            padding: 0 40px;
+        }
+
+        .banner-content {
+            /* width: calc((1280px - 6rem)/2); */
+            padding-top: 50px;
+        }
+
+        .banner-text.dark {
+            color: rgb(51, 51, 51);
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .banner-text h1 {
+            font-size: 1.5rem;
+        }
+
+        .banner-text p {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .btn-req {
+            padding: 0 1.6rem;
+            box-sizing: border-box;
+            text-align: center;
+            cursor: pointer;
+            background-color: rgb(247, 121, 96);
+            border-color: rgb(247, 121, 96);
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .side-by-side-area-title {
+            text-align: center;
+            margin: 0 auto 3rem;
+        }
+
+        .side-by-side-area-title h1 {
+            white-space: pre-line;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: .03rem;
+            margin-bottom: 1rem;
+        }
+
+        .side-by-side-area-title p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            word-break: break-word;
+            white-space: pre-line;
+        }
+
+        .smart-img {
+            background-image: url("https://images.folloze.com/image/upload/c_fill,f_auto,q_auto/v1639990120/flvjkhbbn5pebgtfjwsu.png");
+            background-size: cover;
+            height: 380px;
+            margin: 20px;
+        }
+
+        .side-by-side-paragraph h1 {
+            color: #222;
+            white-space: pre-line;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: .03rem;
+            margin-bottom: 1rem;
+        }
+
+        .side-by-side-paragraph p {
+            color: #3b3b3b;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .col-text {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+        }
+
+        .smart-image.accessibility {
+            background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_238,q_auto,w_368/v1639988614/bvjji0kb3hg0dd1hhiw2.png');
+            background-size: cover;
+            height: 240px;
+            width: 370px;
+        }
+
+        .with-item-description {
+            background-color: rgb(247, 121, 96);
+        }
+
+        .positioning-text h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            line-height: 4.5rem;
+        }
+
+        .positioning-text .separator {
+            display: block;
+            margin: 1.2rem 0;
+            width: 7rem;
+            height: 0.15rem;
+        }
+
+        .positioning-text.with-item {
+            padding: 50px 30px;
+        }
+
+        .leading-item>* {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .leading-item .leading-item-image-wrapper {
+            position: relative;
+        }
+
+        .leading-item .leading-item-image-wrapper>.icon-play-button {
+            position: absolute;
+            margin: auto;
+            top: 50px;
+            left: 0;
+            right: 0;
+            height: 9.6rem;
+            width: 9.6rem;
+            font-size: 9.6rem;
+            box-shadow: 0 0 25px 0 rgb(1 1 1 / 35%);
+            border-radius: 100%;
+            color: #fff;
+            opacity: .85;
+        }
+
+
+        .leading-item-image-wrapper>.icon-play-button:before {
+            background-color: rgba(0, 0, 0, .6);
+            border-radius: 50%;
+        }
+
+        .leading-item .description-container-1 {
+            width: 270px;
+            padding: 2rem;
+            position: static;
+            border: 0.1rem solid #eee;
+            border-left: none;
+            height: 240px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .leading-item .description-container-1 p {
+            position: relative;
+            right: -130%;
+            color: #fff;
+            line-height: 1.5;
+            box-sizing: border-box;
+            text-align: left;
+            transition: right .5s ease-in-out;
+            font-size: 0.8rem;
+        }
+
+        .leading-item .description-container-1:hover p {
+            right: 0;
+        }
+
+        .description-container-1 h1 {
+            position: absolute;
+            padding-right: 2rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-align: left;
+            line-height: 1.15;
+            transition: opacity .5s .2s;
+            opacity: 1;
+        }
+
+        .leading-item .description-container-1:hover h1 {
+            display: none;
+        }
+
+        .content-container h1 a {
+            text-decoration: inherit;
+            color: #fff;
+        }
+
+        .col-align-middle {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                height: 420px;
+            }
+
+            .leading-item .description-container {
+                width: 100%;
+            }
+        }
+
+        .item-tile-container {
+            display: inline-block;
+            margin: 2.8rem 0;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .item-tile-container .item-tile {
+            display: inline-block;
+            /* width: 35rem; */
+            margin: 0 1rem;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .item-tile-container .item-tile>.icon-play-button {
+            position: absolute;
+            margin: auto;
+            top: 7.5rem;
+            left: 0;
+            right: 0;
+            height: 5.5rem;
+            width: 5.5rem;
+            font-size: 5.5rem;
+            box-shadow: 0 0 25px 0 rgb(1 1 1 / 35%);
+            border-radius: 100%;
+            color: #fff;
+            opacity: .85;
+        }
+
+        .item-tile-container .item-tile .item-tile-image-wrapper {
+            overflow: hidden;
+        }
+
+        .item-tile-container .item-tile .item-tile-information:empty {
+            padding: 0.4rem;
+        }
+
+        .item-tile-container .item-tile .item-title,
+        .item-tile-container .item-tile .item-title a {
+            font-size: 1rem;
+            line-height: 2.2rem;
+            max-height: 11.6rem;
+            text-align: left;
+            color: #333;
+            word-wrap: break-word;
+            text-decoration: none;
+        }
+
+        .board-content-container .description-container {
+            position: absolute;
+            top: 0;
+            left: -32rem;
+            width: 95%;
+            height: 240px;
+            color: #fff;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            box-sizing: border-box;
+            text-align: left;
+            transition: left .5s ease-in-out;
+            padding: 1.8rem;
+            border-right: none;
+        }
+
+        .item-tile-container .item-tile .description-container {
+            transition: transform .3s ease-in-out .2s, left .3s ease-in-out;
+        }
+
+        .item-tile-container:hover .description-container {
+            left: 0;
+        }
+
+        .promotion-area-text {
+            text-align: center;
+            margin: 0 auto 3rem;
+        }
+
+        .promotion-area-text h1 {
+            white-space: pre-line;
+            line-height: 3.8rem;
+            font-size: 2rem;
+            letter-spacing: .03rem;
+            font-weight: 400;
+        }
+
+        .promotion-area-text p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            word-break: break-word;
+            white-space: pre-line;
+        }
+
+        .promotion-item-text-block h2 {
+            color: rgb(247, 121, 96);
+            margin-top: 0;
+            font-weight: 500;
+            line-height: 1.2;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .promotion-item-text-block p {
+            color: #222;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .promo-icon-small {
+            background-color: rgb(247, 121, 96);
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            border-color: rgb(247, 121, 96);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .btn-learn {
+            color: rgb(247, 121, 96);
+            border: 2px solid rgb(247, 121, 96);
+            background-color: transparent;
+            border-radius: 10px;
+            height: 49px;
+            width: 120px;
+        }
+
+        .custom-cta-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            margin-top: 4rem;
+        }
+
+        .promotion-area-text-last-block {
+            text-align: center;
+            margin: 6rem 3rem 3rem;
+        }
+
+        .promotion-area-text-last-block h1 {
+            font-size: 2.1rem;
+            font-weight: 350;
+        }
+
+        .promotion-area-text-last-block p {
+            font-size: 1.6rem;
+            padding-top: 10px;
+        }
+
+        .custom-cta-btn-interest {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+        }
+
+        .btn-interest {
+            color: rgb(247, 121, 96);
+            border: 2px solid rgb(247, 121, 96);
+            background-color: transparent;
+            border-radius: 10px;
+            height: 49px;
+            width: 144px;
+        }
+
+        .center-container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-top: 70px;
+        }
+
+        .logo2 {
+            height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="app">
+        <section class="header-container">
+            <div class="header-content container">
+                <div class="logo-container  padding">
+                    <img src="https://images.folloze.com/image/upload/c_fill,f_auto,q_auto/v1639728737/crybr3lmz6bxgak2srmf.png"
+                        class="smart-image logo" role="button" tabindex="2" />
+                </div>
+                <h2>AI for Workplace Safety</h2>
+                <div class="right-content">
+                    <div class="share-button-container">
+                        <div class="share-button accessibility" tabindex="0" role="button">
+                            <span class="icon-share"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-text">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="banner-content align-left">
+                            <div class="banner-text dark">
+                                <h1>AI-Powered Safety with Smart Devices</h1>
+                                <p>With the launch of smart devices, computer vision can be brought to life. When unsafe
+                                    acts
+                                    and
+                                    conditions are detected, visual alarms and audible alerts can get triggered in
+                                    real-time.
+                                </p>
+                            </div>
+                            <div class="cta-button accessibility" tabindex="0" role="button" aria-label="open form">
+                                <button class="btn-req">Request Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="board-content-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="side-by-side-area-title">
+                            <h1>What is Intenseye?</h1>
+                            <p>
+                                With the use of existing cameras within your facilities, Intenseye uses artificial
+                                intelligence to anonymously monitor the workplace, 24/7, sending real-time alerts of
+                                unsafe acts as they happen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="smart-img"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-text">
+                        <span class="side-by-side-paragraph ">
+                            <h1>No hardware, no sensor, no installation</h1>
+                            <p>
+                                Our deep learning-powered AI models can predict and analyze body posture, ergonomics,
+                                danger zone violations, personal protective equipment usage in real-time. Based on our
+                                instant notification system facilities can stop violations before they turn into
+                                accidents.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="positioning-text with-item">
+                            <h1>Smart Devices in Action</h1>
+                            <span class="separator" style="background-color: rgb(247, 121, 96);"></span>
+                            <p>
+                                Seconds can make all the difference in preventing a workplace injury. The act of
+                                re-focusing for four seconds has been shown to reduce the probability of injury or
+                                incident by 90%. See why the launch of Smart Devices is the right next step for
+                                Intenseye customers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-align-middle">
+                        <div class="leading-item  accessibility" tabindex="0">
+                            <div class="leading-item-image-wrapper">
+                                <span class="icon-play-button"></span>
+                                <div class="smart-image  accessibility" role="button">
+                                </div>
+                            </div>
+                            <div class="description-container-1 with-item-description">
+                                <div class="description-content">
+                                    <div class="content-container">
+                                        <h1>
+                                            <a href="/smart-devices-launch/home/smart-devices-0e4b?utm_campaign=interestingengineering&amp;utm_source=linkedin"
+                                                tabindex="-1">Smart Devices</a>
+                                        </h1>
+                                        <p>
+                                            Intenseye captures unsafe acts and provides real-time visual and focused
+                                            audio feedback to guide the individual to a safe state; ultimately, helping
+                                            to prevent an incident or injury.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="One of the most common incidents that occur from crane or lifting equipment are workers being struck by an object. With the help of Intenseye, you can help prevent these incidents before they occur.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985530/sgvfbybmworlfkl8xnxw.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Area Controls</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>One of the most common incidents that occur from crane or lifting
+                                                equipment are workers being struck by an object. With the help of
+                                                Intenseye, you can help prevent these incidents before they occur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Unsafe behavior accounts for 80% of accidents that occur in the workplace. Whether it's not holding onto a handrail or missing PPE, behavioral-based safety is an important part of safety protocol. With the use of Intenseye, you can identify these critical leading indicators and help prevent incidents before they occur.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985475/qjuyxrhrpz7jrxiym6ah.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Behavioral Safety</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Unsafe behavior accounts for 80% of accidents that occur in the
+                                                workplace. Whether it's not holding onto a handrail or missing PPE,
+                                                behavioral-based safety is an important part of safety protocol. With
+                                                the use of Intenseye, you can identify these critical leading indicators
+                                                and help prevent incidents before they occur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Whether it is slips, trips,  falls or sharp objects thrown into trash bags, housekeeping maintenance is one of the most important safety measures in the workplace. Intenseye can detect anything from unattended objects to leakages and spills - creating alerts to prevent incidents before they occur.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985541/gt3chv1m7k2n1ofkg9ec.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Housekeeping </a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Whether it is slips, trips, falls or sharp objects thrown into trash
+                                                bags, housekeeping maintenance is one of the most important safety
+                                                measures in the workplace. Intenseye can detect anything from unattended
+                                                objects to leakages and spills - creating alerts to prevent incidents
+                                                before they occur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Covid-19 drastically changed the world as we once knew it and the residual effects on warehouse workers have forced industries to adopt a new normal. Continued social distancing, additional PPE, and new process and procedures are some of the changes we've seen. Intenseye can help ensure the safety of workers in a post-pandemic world.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985510/pzwh3apzoozfjieiigyo.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Pandemic Controls</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Covid-19 drastically changed the world as we once knew it and the
+                                                residual effects on warehouse workers have forced industries to adopt a
+                                                new normal. Continued social distancing, additional PPE, and new process
+                                                and procedures are some of the changes we've seen. Intenseye can help
+                                                ensure the safety of workers in a post-pandemic world.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="PPE is required in most warehouses to protect workers and minimize the exposure to hazards that can cause serious workplace injuries and illnesses. Often times, employers do not have visibility into the true compliance of PPE. Intenseye can see what was previously the unseen and provide a holistic picture of true compliance in the warehouse - all while protecting worker's privacy.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985518/vkrcacpyvyjz3t4phy1v.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Personal Protective Equipment
+                                        (PPE)</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>PPE is required in most warehouses to protect workers and minimize the
+                                                exposure to hazards that can cause serious workplace injuries and
+                                                illnesses. Often times, employers do not have visibility into the true
+                                                compliance of PPE. Intenseye can see what was previously the unseen and
+                                                provide a holistic picture of true compliance in the warehouse - all
+                                                while protecting worker's privacy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Forklift incidents continue to be in the OSHA Top 10 citations. Whether it's overturns, workers falling off, or pedestrians struck, Intenseye can help prevent these incidents before they occur, all while protecting worker's privacy.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985502/zlrtn6abfr20ezmdqjmn.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a
+                                        href="/smart-devices-launch/use-cases/vehicle-controls?utm_campaign=interestingengineering&amp;utm_source=linkedin"
+                                        tabindex="-1">Vehicle Controls</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Forklift incidents continue to be in the OSHA Top 10 citations. Whether
+                                                it's overturns, workers falling off, or pedestrians struck, Intenseye
+                                                can help prevent these incidents before they occur, all while protecting
+                                                worker's privacy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="It could be a matter of seconds that changes the outcome of a life or death situation. In the event of an emergency, the information you have and how you react is critical. Intenseye can help ensure an efficient response to a man down emergency occurring in the workplace.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639985490/u2x07tcc7jasdz6ddb5u.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Worker Down</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>It could be a matter of seconds that changes the outcome of a life or
+                                                death situation. In the event of an emergency, the information you have
+                                                and how you react is critical. Intenseye can help ensure an efficient
+                                                response to a man down emergency occurring in the workplace.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Intenseye captures unsafe acts and provides real-time visual and focused audio feedback to guide the individual to a safe state; ultimately, helping to prevent an incident or injury.">
+                                <span class="icon-play-button"></span>
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639988635/iuwzzfbdnfz5pgucyn4d.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a href="#" tabindex="-1">Smart Devices in Action</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Intenseye captures unsafe acts and provides real-time visual and focused
+                                                audio feedback to guide the individual to a safe state; ultimately,
+                                                helping to prevent an incident or injury.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="item-tile-container ">
+                            <div class="item-tile accessibility" role="button" tabindex="0"
+                                aria-label="Using existing cameras within facilities, we empower EHS teams to monitor their workplace 24/7, receive real-time unsafe act notifications, and operationalize compliance procedures.">
+                                <div class="item-tile-image-wrapper">
+                                    <div class="smart-image  accessibility" role="button"
+                                        style="background-image: url('https://images.folloze.com/image/upload/c_fill,f_auto,h_233,q_auto,w_348/v1639988423/kz1tuomodgsnaibw9v8a.png'); background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="item-tile-information"></div>
+                                <div class="item-title"><a
+                                        href="/smart-devices-launch/use-cases/visit-our-website?utm_campaign=interestingengineering&amp;utm_source=linkedin"
+                                        tabindex="-1">Visit our Website</a></div>
+                                <div class="description-container undefined"
+                                    style="background-color: rgb(247, 121, 96);">
+                                    <div class="description-content">
+                                        <div class="content-container">
+                                            <p>Using existing cameras within facilities, we empower EHS teams to monitor
+                                                their workplace 24/7, receive real-time unsafe act notifications, and
+                                                operationalize compliance procedures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="promotion-area-text">
+                            <h1>How does it work?</h1>
+                            <p>Our all-in-one platform connects existing cameras from your facilities around the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <span class="icon-wrapper system-icon promo-icon-small disabled"></span>
+                        <div class="promotion-item-text-block">
+                            <h2>Software-first</h2>
+                            <p>High-performance software and IP-networked cameras unlock 24/7 automated inspections and
+                                real-time event notifications for the first time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <span class="icon-wrapper system-icon promo-icon-small disabled"></span>
+                        <div class="promotion-item-text-block">
+                            <h2>Computer Vision</h2>
+                            <p>The ability to identify anomalous events and create analytics for EHS teams to improve
+                                safety is enabled by machine learning and computer vision.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <span class="icon-wrapper system-icon promo-icon-small disabled"></span>
+                        <div class="promotion-item-text-block">
+                            <h2>Privacy by Design</h2>
+                            <p>In addition to saving lives, we are a privacy-first company Intenseye does not capture
+                                personally identifiable information from the visual data that we process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="custom-cta-btn" tabindex="0">
+                            <button class="btn-learn">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="promotion-area-text-last-block">
+                            <h1>See Intenseye in action</h1>
+                            <p>Ready to see a personalized demo with an Intenseye expert?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="custom-cta-btn-interest" tabindex="0">
+                            <button class="btn-interest">I'm interested!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="center-container">
+                            <img class="logo2" src="https://images.folloze.com/image/upload/c_fill,f_auto,q_auto/v1637004325/vta2kc9m4ecjhj4jcqac.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+
+</html>
